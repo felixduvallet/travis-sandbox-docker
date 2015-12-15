@@ -2,3 +2,7 @@ sudo: required
 
 services:
   - docker
+
+before_install:
+  - docker pull felixduvallet/my-whale
+  - docker run felixduvallet/my-whale
