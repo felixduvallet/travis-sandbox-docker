@@ -5,4 +5,5 @@ services:
 
 before_install:
   - docker pull felixduvallet/my-whale
-  - docker run felixduvallet/my-whale
+  - docker build -t felixduvallet/python-sandbox .
+  - docker run felixduvallet/python-sandbox
